@@ -4,7 +4,7 @@ import { useState } from "react"
 
 type Estado = "idle" | "enviando" | "ok" | "error"
 
-export default function RegistroTest() {
+export default function Registro() {
   const [email, setEmail] = useState("")
   const [necesitaCredenciales, setNecesitaCredenciales] = useState<"si" | "no">("si")
   const [consulta, setConsulta] = useState("")
@@ -41,15 +41,6 @@ export default function RegistroTest() {
   return (
     <div className="min-h-screen bg-gray-50 flex items-center justify-center px-4 py-16">
       <div className="w-full max-w-md">
-
-        {/* Aviso de entorno de prueba */}
-        <div className="bg-yellow-50 border border-yellow-200 rounded-xl px-4 py-3 mb-6 text-sm text-yellow-800 flex items-start gap-2">
-          <span className="text-base mt-0.5">⚠️</span>
-          <span>
-            <strong>Página de prueba</strong> — No enlazada desde producción.
-            Los envíos irán al Excel de prueba y dispararán el Power Automate.
-          </span>
-        </div>
 
         <div className="bg-white rounded-2xl shadow-sm border border-gray-200 p-8">
           <h1 className="text-2xl font-bold text-gray-900 mb-2">Solicitar acceso</h1>

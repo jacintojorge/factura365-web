@@ -1,0 +1,28 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx create-next-app@latest . --typescript --tailwind --eslint --app --src-dir=false --import-alias=\"@/*\" --no-turbopack)",
+      "Bash(choco --version)",
+      "Bash(npx create-next-app@latest . --typescript --tailwind --eslint --app --src-dir=false --import-alias=\"@/*\" --no-turbopack --yes)",
+      "Bash(npm install @next/mdx @mdx-js/loader @mdx-js/react gray-matter next-mdx-remote)",
+      "Bash(npm install @tailwindcss/typography)",
+      "Bash(npx next build)",
+      "WebFetch(domain:sede.agenciatributaria.gob.es)",
+      "WebFetch(domain:civio.es)",
+      "WebFetch(domain:www.garrigues.com)",
+      "WebFetch(domain:www.comercialtpv.com)",
+      "WebFetch(domain:www.eldiario.es)",
+      "WebFetch(domain:www.autonomosenruta.com)",
+      "WebFetch(domain:cia-dsp.com)",
+      "WebSearch",
+      "WebFetch(domain:www.tecnofun.es)",
+      "WebFetch(domain:www.empresia.es)",
+      "WebFetch(domain:www.northdata.com)",
+      "WebFetch(domain:factura365.es)",
+      "WebFetch(domain:infocif.economia3.com)",
+      "WebFetch(domain:www.whois.com)",
+      "WebFetch(domain:empresite.eleconomista.es)",
+      "Bash(echo \"POWER_AUTOMATE_REGISTRO_URL=:*)"
+    ]
+  }
+}
