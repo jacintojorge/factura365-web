@@ -3,6 +3,9 @@ import { notFound } from "next/navigation"
 import Link from "next/link"
 import { getAllPosts, getPostBySlug } from "@/lib/posts"
 import { MDXRemote } from "next-mdx-remote/rsc"
+import VeriFactuTimeline from "@/components/VeriFactuTimeline"
+
+const mdxComponents = { VeriFactuTimeline }
 
 interface Props {
   params: Promise<{ slug: string }>
@@ -66,7 +69,7 @@ export default async function PostPage({ params }: Props) {
 
       {/* Contenido MDX */}
       <article className="prose prose-gray prose-blue max-w-none">
-        <MDXRemote source={content} />
+        <MDXRemote source={content} components={mdxComponents} />
       </article>
 
       {/* Footer del post */}
