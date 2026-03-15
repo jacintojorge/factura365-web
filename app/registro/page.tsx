@@ -43,7 +43,9 @@ export default function Registro() {
       <div className="w-full max-w-md">
 
         <div className="bg-white rounded-2xl shadow-sm border border-gray-200 p-8">
-          <h1 className="text-2xl font-bold text-gray-900 mb-2">Solicitar acceso</h1>
+          <h1 className="text-2xl font-bold text-gray-900 mb-2">
+            {necesitaCredenciales === "si" ? "Empieza tu prueba gratuita" : "¿En qué podemos ayudarte?"}
+          </h1>
           <p className="text-gray-500 text-sm mb-8">
             {necesitaCredenciales === "si"
               ? "Introduce tu email y te enviaremos los datos de acceso para empezar tu prueba gratuita de 30 días."
