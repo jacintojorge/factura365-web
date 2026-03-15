@@ -38,7 +38,7 @@ export default function Hero() {
                 href={siteConfig.registerUrl}
                 className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-3.5 rounded-xl text-base transition-colors shadow-sm text-center"
               >
-                Empieza ahora — gratis 14 días
+                Empieza ahora — gratis 30 días
               </Link>
               <Link
                 href="/#como-funciona"

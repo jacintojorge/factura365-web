@@ -9,7 +9,7 @@ export default function CtaFinal() {
           Empieza a facturar hoy mismo
         </h2>
         <p className="text-gray-500 text-lg mb-10 leading-relaxed">
-          14 días de prueba gratuita, sin tarjeta de crédito. Configuración en minutos.
+          30 días de prueba gratuita, sin tarjeta de crédito. Configuración en minutos.
           Cumple con VeriFactu desde el primer día.
         </p>
         <Link
