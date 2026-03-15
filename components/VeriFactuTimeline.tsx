@@ -1,4 +1,6 @@
-const hitos = [
+type Estado = "pasado" | "presente" | "futuro"
+
+const hitos: { fecha: string; titulo: string; descripcion: string; estado: Estado; destacado: boolean }[] = [
   {
     fecha: "Jul 2025",
     titulo: "Fabricantes obligados",
