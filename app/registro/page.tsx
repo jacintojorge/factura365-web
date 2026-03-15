@@ -45,7 +45,10 @@ export default function Registro() {
         <div className="bg-white rounded-2xl shadow-sm border border-gray-200 p-8">
           <h1 className="text-2xl font-bold text-gray-900 mb-2">Solicitar acceso</h1>
           <p className="text-gray-500 text-sm mb-8">
-            Introduce tu email y te enviaremos los datos de acceso para empezar tu prueba gratuita de 30 días.
+            {necesitaCredenciales === "si"
+              ? "Introduce tu email y te enviaremos los datos de acceso para empezar tu prueba gratuita de 30 días."
+              : "Cuéntanos en qué podemos ayudarte y te responderemos lo antes posible."
+            }
           </p>
 
           {estado === "ok" ? (
@@ -83,10 +86,7 @@ export default function Registro() {
               {/* Radio credenciales */}
               <div>
                 <p className="block text-sm font-medium text-gray-700 mb-3">
-                  ¿Necesitas credenciales iniciales?
-                  <span className="block text-xs text-gray-400 font-normal mt-0.5">
-                    Selecciona <em>Sí</em> si eres nuevo y nunca has accedido antes.
-                  </span>
+                  ¿Es la primera vez que accedes a Factura365?
                 </p>
                 <div className="space-y-2.5">
                   <label className={`flex items-center gap-3 px-4 py-3 rounded-xl border cursor-pointer transition-colors ${
@@ -104,7 +104,7 @@ export default function Registro() {
                       className="accent-blue-600"
                     />
                     <span className="text-sm text-gray-800">
-                      <strong>Sí</strong> — Soy nuevo, necesito que me creen una cuenta
+                      <strong>Sí</strong> — Es la primera vez que accedo a Factura365
                     </span>
                   </label>
                   <label className={`flex items-center gap-3 px-4 py-3 rounded-xl border cursor-pointer transition-colors ${
@@ -121,7 +121,7 @@ export default function Registro() {
                       className="accent-blue-600"
                     />
                     <span className="text-sm text-gray-800">
-                      <strong>No</strong> — Ya tengo cuenta o tengo otra consulta
+                      <strong>No</strong> — Ya tengo cuenta o quiero hacer una consulta
                     </span>
                   </label>
                 </div>
@@ -131,7 +131,7 @@ export default function Registro() {
               {necesitaCredenciales === "no" && (
                 <div>
                   <label htmlFor="consulta" className="block text-sm font-medium text-gray-700 mb-1.5">
-                    ¿En qué podemos ayudarte?
+                    ¿En qué podemos ayudarte? <span className="text-gray-400 font-normal">(acceso, dudas, incidencias...)</span>
                   </label>
                   <textarea
                     id="consulta"
