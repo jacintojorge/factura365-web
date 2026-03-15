@@ -33,6 +33,16 @@ export default function Footer() {
               <li><Link href="/#precios" className="hover:text-gray-800">Precios</Link></li>
               <li><Link href="/como-empezar" className="hover:text-gray-800">Cómo empezar</Link></li>
               <li><Link href="/blog" className="hover:text-gray-800">Blog</Link></li>
+              <li>
+                <a
+                  href={siteConfig.appUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-gray-800"
+                >
+                  Acceder a la aplicación
+                </a>
+              </li>
             </ul>
           </div>
 

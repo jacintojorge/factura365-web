@@ -45,9 +45,9 @@ export default function Navbar() {
             href={siteConfig.appUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors"
+            className="text-sm text-gray-400 hover:text-gray-600 transition-colors"
           >
-            Acceder →
+            Abrir app
           </a>
           <Link
             href={siteConfig.registerUrl}
@@ -86,10 +86,10 @@ export default function Navbar() {
             href={siteConfig.appUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-600 font-medium"
+            className="text-gray-400 hover:text-gray-600"
             onClick={() => setMenuOpen(false)}
           >
-            Acceder a la app →
+            Abrir app
           </a>
           <Link
             href={siteConfig.registerUrl}
