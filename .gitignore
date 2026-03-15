@@ -39,3 +39,5 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+POWER_AUTOMATE_REGISTRO_URL=
+.env.local
