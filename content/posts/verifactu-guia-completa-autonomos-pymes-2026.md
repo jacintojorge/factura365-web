@@ -1,6 +1,7 @@
 ---
 title: "VeriFactu 2026: guía completa para autónomos y pymes"
 date: "2026-03-01"
+tags: ["VeriFactu", "Autónomos", "Pymes", "Guía"]
 description: "Todo lo que necesitas saber sobre VeriFactu en 2026: qué es, quién está obligado, plazos, sanciones, modalidades y cómo prepararte. La guía definitiva para autónomos y pymes españoles."
 ---
 

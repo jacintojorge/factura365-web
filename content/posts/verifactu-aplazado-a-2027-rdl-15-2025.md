@@ -1,6 +1,7 @@
 ---
 title: "VeriFactu se aplaza a 2027: qué cambia con el RDL 15/2025 y qué debes hacer ahora"
 date: "2025-12-05"
+tags: ["VeriFactu", "Normativa", "Plazos"]
 description: "El Real Decreto-ley 15/2025 retrasa por segunda vez la obligatoriedad de VeriFactu. Empresas hasta enero 2027, autónomos hasta julio 2027. Te explicamos qué significa este cambio."
 ---
 

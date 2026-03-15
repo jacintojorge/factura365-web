@@ -1,6 +1,7 @@
 ---
 title: "¿Estoy obligado a usar VeriFactu? Casos en los que sí y en los que no"
 date: "2026-01-10"
+tags: ["VeriFactu", "Autónomos", "Pymes"]
 description: "No todos los autónomos y empresas están obligados a adaptar su software a VeriFactu. Te explicamos exactamente quién está obligado, quién está excluido y cuándo entra en vigor."
 ---
 

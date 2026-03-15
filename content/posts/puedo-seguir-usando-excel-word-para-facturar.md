@@ -1,6 +1,7 @@
 ---
 title: "¿Puedo seguir usando Excel, Word o papel para facturar?"
 date: "2026-02-03"
+tags: ["VeriFactu", "Autónomos", "Facturación electrónica"]
 description: "Muchos autónomos facturan con Excel, Word o incluso a mano. ¿Están obligados a pasarse a un software VeriFactu? La respuesta depende de varios factores. Te lo explicamos."
 ---
 

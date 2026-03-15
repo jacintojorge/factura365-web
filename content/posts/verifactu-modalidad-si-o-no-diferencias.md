@@ -1,6 +1,7 @@
 ---
 title: "VeriFactu modalidad SÍ y NO: qué diferencia hay y cuál te conviene"
 date: "2026-01-22"
+tags: ["VeriFactu", "Normativa", "Guía"]
 description: "El sistema VeriFactu tiene dos modalidades: con envío automático a la AEAT (VERI*FACTU) y sin envío pero con conservación local. Te explicamos la diferencia y cuál es mejor para tu negocio."
 ---
 

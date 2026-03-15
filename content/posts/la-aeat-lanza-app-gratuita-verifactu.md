@@ -1,6 +1,7 @@
 ---
 title: "La AEAT lanza su app gratuita de facturación VeriFactu para autónomos y pymes"
 date: "2025-10-15"
+tags: ["VeriFactu", "AEAT", "Novedades"]
 description: "La Agencia Tributaria ha publicado una herramienta gratuita de facturación certificada VeriFactu. Te explicamos qué es, para quién es útil y sus limitaciones."
 ---
 

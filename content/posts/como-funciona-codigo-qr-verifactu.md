@@ -1,6 +1,7 @@
 ---
 title: "Cómo funciona el código QR de VeriFactu: qué información contiene y para qué sirve"
 date: "2026-02-20"
+tags: ["VeriFactu", "AEAT", "Guía"]
 description: "Todas las facturas VeriFactu llevan un código QR. Te explicamos qué información contiene, cómo verificarlo, y por qué es una garantía tanto para el emisor como para el receptor."
 ---
 

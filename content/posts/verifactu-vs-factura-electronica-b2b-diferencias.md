@@ -1,6 +1,7 @@
 ---
 title: "VeriFactu y Factura Electrónica B2B: no son lo mismo y conviene no confundirlos"
 date: "2026-02-12"
+tags: ["VeriFactu", "Facturación electrónica", "Normativa"]
 description: "Muchos autónomos y pymes confunden VeriFactu con la obligación de factura electrónica B2B (Ley Crea y Crece). Son dos normativas distintas con plazos diferentes. Te lo aclaramos."
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: "Sanciones por no cumplir con VeriFactu: hasta 50.000 € para autónomos y 150.000 € para fabricantes"
 date: "2025-10-25"
+tags: ["VeriFactu", "Sanciones", "Ley antifraude"]
 description: "¿Qué pasa si no adaptas tu software a VeriFactu cuando sea obligatorio? Las multas están fijadas en la Ley General Tributaria y son muy elevadas. Te lo explicamos."
 ---
 
