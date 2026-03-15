@@ -4,6 +4,7 @@ import Features from "@/components/Features"
 import AppScreenshots from "@/components/AppScreenshots"
 import HowItWorks from "@/components/HowItWorks"
 import Pricing from "@/components/Pricing"
+import TrialTeaser from "@/components/TrialTeaser"
 import TimelineTeaser from "@/components/TimelineTeaser"
 import CtaFinal from "@/components/CtaFinal"
 
@@ -16,6 +17,7 @@ export default function Home() {
       <AppScreenshots />
       <HowItWorks />
       <Pricing />
+      <TrialTeaser />
       <TimelineTeaser />
       <CtaFinal />
     </>
