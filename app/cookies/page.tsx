@@ -51,33 +51,10 @@ export default function Cookies() {
 
         <h3>Cookies analíticas</h3>
         <p>
-          Permiten analizar el uso del sitio web de forma agregada y anónima para mejorar
-          su funcionamiento. Requieren tu consentimiento.
+          Actualmente este sitio web <strong>no utiliza cookies analíticas</strong> ni de seguimiento
+          de terceros. Si en el futuro se incorporaran, esta política se actualizará con antelación
+          y se solicitará el consentimiento correspondiente.
         </p>
-        <table>
-          <thead>
-            <tr>
-              <th>Cookie</th>
-              <th>Proveedor</th>
-              <th>Finalidad</th>
-              <th>Duración</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><code>_ga</code></td>
-              <td>Google Analytics</td>
-              <td>Distinguir usuarios únicos</td>
-              <td>2 años</td>
-            </tr>
-            <tr>
-              <td><code>_ga_*</code></td>
-              <td>Google Analytics</td>
-              <td>Mantener el estado de la sesión</td>
-              <td>2 años</td>
-            </tr>
-          </tbody>
-        </table>
 
         <h2>3. ¿Cómo puedo gestionar o eliminar las cookies?</h2>
         <p>
@@ -108,27 +85,14 @@ export default function Cookies() {
           </li>
         </ul>
 
-        <h2>4. Cookies de terceros</h2>
-        <p>
-          Algunas cookies son instaladas por servicios de terceros. Puedes consultar sus propias
-          políticas de privacidad:
-        </p>
-        <ul>
-          <li>
-            <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">
-              Política de privacidad de Google
-            </a>
-          </li>
-        </ul>
-
-        <h2>5. Actualizaciones de esta política</h2>
+        <h2>4. Actualizaciones de esta política</h2>
         <p>
           Podemos actualizar esta Política de Cookies para reflejar cambios en el sitio web o en
           la legislación aplicable. Te recomendamos revisar esta página periódicamente. La fecha
           de última actualización aparece al inicio del documento.
         </p>
 
-        <h2>6. Contacto</h2>
+        <h2>5. Contacto</h2>
         <p>
           Si tienes alguna pregunta sobre el uso de cookies en este sitio, puedes contactarnos
           en <a href="mailto:hola@factura365.es">hola@factura365.es</a>.
