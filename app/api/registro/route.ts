@@ -11,14 +11,14 @@ export async function POST(req: NextRequest) {
     )
   }
 
-  let body: { email?: string; necesitaCredenciales?: string }
+  let body: { email?: string; necesitaCredenciales?: string; consulta?: string }
   try {
     body = await req.json()
   } catch {
     return NextResponse.json({ error: "Datos inválidos" }, { status: 400 })
   }
 
-  const { email, necesitaCredenciales } = body
+  const { email, necesitaCredenciales, consulta } = body
 
   if (!email || !email.includes("@")) {
     return NextResponse.json({ error: "Email inválido" }, { status: 400 })
@@ -35,6 +35,7 @@ export async function POST(req: NextRequest) {
       body: JSON.stringify({
         email,
         necesitaCredenciales,
+        consulta: consulta ?? "",
         fecha: new Date().toISOString(),
         origen: "web",
       }),

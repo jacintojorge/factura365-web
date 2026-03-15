@@ -6,7 +6,8 @@ type Estado = "idle" | "enviando" | "ok" | "error"
 
 export default function RegistroTest() {
   const [email, setEmail] = useState("")
-  const [necesitaCredenciales, setNecesitaCredenciales] = useState<"si" | "no" | "">("")
+  const [necesitaCredenciales, setNecesitaCredenciales] = useState<"si" | "no">("si")
+  const [consulta, setConsulta] = useState("")
   const [estado, setEstado] = useState<Estado>("idle")
   const [errorMsg, setErrorMsg] = useState("")
 
@@ -19,7 +20,7 @@ export default function RegistroTest() {
       const res = await fetch("/api/registro", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email, necesitaCredenciales }),
+        body: JSON.stringify({ email, necesitaCredenciales, consulta }),
       })
 
       const data = await res.json()
@@ -59,10 +60,14 @@ export default function RegistroTest() {
           {estado === "ok" ? (
             <div className="text-center py-6">
               <div className="text-4xl mb-4">✅</div>
-              <h2 className="text-lg font-semibold text-gray-900 mb-2">¡Solicitud recibida!</h2>
+              <h2 className="text-lg font-semibold text-gray-900 mb-2">
+                {necesitaCredenciales === "si" ? "¡Solicitud recibida!" : "¡Consulta enviada!"}
+              </h2>
               <p className="text-gray-500 text-sm">
-                En breve recibirás un email en <strong>{email}</strong> con tus datos de acceso.
-                Revisa también la carpeta de spam.
+                {necesitaCredenciales === "si"
+                  ? <>En breve recibirás un email en <strong>{email}</strong> con tus datos de acceso. Revisa también la carpeta de spam.</>
+                  : <>Hemos recibido tu consulta. Te responderemos en <strong>{email}</strong> lo antes posible.</>
+                }
               </p>
             </div>
           ) : (
@@ -125,11 +130,29 @@ export default function RegistroTest() {
                       className="accent-blue-600"
                     />
                     <span className="text-sm text-gray-800">
-                      <strong>No</strong> — Ya tengo cuenta, solo quiero recuperar el acceso
+                      <strong>No</strong> — Ya tengo cuenta o tengo otra consulta
                     </span>
                   </label>
                 </div>
               </div>
+
+              {/* Textarea consulta — solo si elige "No" */}
+              {necesitaCredenciales === "no" && (
+                <div>
+                  <label htmlFor="consulta" className="block text-sm font-medium text-gray-700 mb-1.5">
+                    ¿En qué podemos ayudarte?
+                  </label>
+                  <textarea
+                    id="consulta"
+                    required
+                    value={consulta}
+                    onChange={(e) => setConsulta(e.target.value)}
+                    placeholder="Escribe aquí tu consulta o el motivo de tu solicitud..."
+                    rows={4}
+                    className="w-full px-4 py-3 rounded-xl border border-gray-200 text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm resize-none"
+                  />
+                </div>
+              )}
 
               {/* Error */}
               {estado === "error" && (
@@ -144,7 +167,12 @@ export default function RegistroTest() {
                 disabled={estado === "enviando"}
                 className="w-full bg-blue-600 hover:bg-blue-700 disabled:bg-blue-400 text-white font-semibold px-6 py-3.5 rounded-xl text-base transition-colors"
               >
-                {estado === "enviando" ? "Enviando…" : "Solicitar acceso gratis"}
+                {estado === "enviando"
+                  ? "Enviando…"
+                  : necesitaCredenciales === "si"
+                    ? "Solicitar acceso gratis"
+                    : "Enviar consulta"
+                }
               </button>
 
               <p className="text-xs text-gray-400 text-center">
